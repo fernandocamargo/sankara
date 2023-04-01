@@ -4,8 +4,14 @@ import { composeWithDevTools } from '@redux-devtools/extension';
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
+import * as Settings from 'state/settings';
 import { name } from 'pckg';
-// import * as reducers from 'actions/reducers';
+
+// import reducers from './reducers.macro';
+
+// console.log({ reducers });
+
+console.log({ Settings });
 
 export const compose = composeWithDevTools({ name });
 
